@@ -1,0 +1,70 @@
+.section-card {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-img {
+            max-width: 311px;
+            width: 100%;
+        }
+
+        &-text {
+            @include text;
+            max-width: 299px;
+            width: 100%;
+            margin-block: 32px;
+        }
+
+        &-title {
+            font-family: $PoppinsSemibold;
+            font-size: 30px;
+            line-height: 48px;
+            color: #263238;
+        }
+
+        &-button {
+            width: 240px;
+            padding: 5px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: #EEEEEE;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-texts {
+            font-size: 30px;
+            line-height: 45px;
+        }
+
+        .btn-per {
+            font-size: 18px;
+            line-height: 27px;
+            color: #546269;
+        }
+    }
+}
+
+.price-title {
+    font-family: $PoppinsSemibold;
+    text-align: center;
+    margin-block: 100px;
+    font-size: 48px;
+    line-height: 80px;
+
+    @include mediaMobileFirst(920) {
+        margin-block: 50px;
+        font-size: 38px;
+    }
+
+
+}

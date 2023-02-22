@@ -1,0 +1,108 @@
+.header-banner {
+    @include mediaMobileFirst(1220) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+    @include flexBetween;
+    gap: 30px;
+
+    &__left {
+        max-width: 700px;
+        width: 100%;
+
+        @include mediaMobileFirst(1220) {
+            max-width: 500px;
+        }
+
+        @include mediaMobileFirst(590) {
+            max-width: 400px;
+        }
+    }
+}
+
+.header-banner__text {
+    @include text;
+    max-width: 526px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+    @include mediaMobileFirst(1220) {
+       margin-inline: auto;
+    }
+
+    @include mediaMobileFirst(390) {
+        font-size: 17px;
+    }
+}
+
+.header-banner__btn {
+    padding: 32px 77px;
+    background: #263238;
+    border-radius: 15px;
+    border: none;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+    border: 3px solid #263238;
+    transition: .5s;
+
+
+    @include mediaMobileFirst(590) {
+        padding: 17px 50px;
+        font-size: 26px;
+    }
+
+    @include mediaMobileFirst(390) {
+        padding: 0 35px;
+        font-size: 17px;
+    }
+}
+
+.header-banner__btn:hover {
+    background-color: #FFFFFF;
+    border: 3px solid #263238;
+    color: #263238;
+}
+
+.header-banner-box {
+
+    .header-banner__titles {
+        font-family: $PoppinsSemibold;
+        font-size: 64px;
+        line-height: 80px;
+
+        @include mediaMobileFirst(590) {
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        @include mediaMobileFirst(590) {
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+
+    .header-banner__title {
+        font-family: $PoppinsSemibold;
+        font-size: 64px;
+        line-height: 80px;
+        margin-top: 115px;
+        
+        @include mediaMobileFirst(590) {
+            margin-top: 0;
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        @include mediaMobileFirst(590) {
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.header-top {
+    &__box {
+        margin-top: 30px;
+        @include flexBetween;
+
+        @include mediaMobileFirst(680) {
+            margin: 0;
+        }
+    }
+
+
+
+    &__btn {
+        padding: 17px 57px;
+        font-size: 24px;
+        line-height: 36px;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: .5s;
+
+        @include mediaMobileFirst(767) {
+            display: none;
+        }
+    }
+
+    .burger-menu {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+
+        @include mediaMobileFirst(767) {
+            display: flex;
+        }
+
+        &>div {
+            width: 30px;
+            height: 3px;
+            background: #39515E;
+            border-radius: 1px;
+        }
+        .b {
+            width: 21.22px;
+            height: 3px;
+            background: #39515E;
+            border-radius: 1px;
+        }
+    }
+
+
+    &__btn:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    .logo {
+        font-family: $PoppinsRegular;
+        font-size: 36px;
+        line-height: 54px;
+        color: #000000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    }
+
+    &__item {
+
+        @include flexCenter;
+        gap: 20px;
+    }
+
+    &__title {
+        @include mediaMobileFirst(767) {
+            display: none;
+        }
+
+        color: #263238;
+        font-family: "Poppins-Medium";
+        font-size: 20px;
+        line-height: 30px;
+        transition: .5s;
+        border-bottom: 3px solid #fff;
+    }
+
+    &__title:hover {
+        border-bottom: 3px solid;
+    }
+}

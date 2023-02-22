@@ -1,0 +1,20 @@
+@mixin flexBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexAlignCenter {
+    display: flex;
+    align-items: center;
+}
+@mixin text {
+    color: #8F95A5;
+    font-family: $PoppinsRegular;
+}

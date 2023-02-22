@@ -1,0 +1,18 @@
+// General styles
+
+@import "./variables/normalize";
+@import "./variables/fonts";
+@import "./variables/variable";
+@import "./variables/mixins";
+@import "./variables/media-mixin";
+
+
+//  Components
+
+@import "./components/header-top";
+@import "./components/header-banner";
+@import "./components/main-card";
+@import "./components/about-us";
+@import "./components/piricing";
+@import "./components/contact";
+@import "./components/footer";
